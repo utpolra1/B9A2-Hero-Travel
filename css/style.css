@@ -40,17 +40,20 @@ p{
 }
 .banner-label{
     position: absolute;
-    top: 60%;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    justify-content: center;
     gap: 24px;
+    width: 55%;
+    height: 70px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
+    align-items: center;
 }
 .search-input {
-    width: 100%;
-    border: none;
+    /* width: 100%; */
     border: 1px solid rgb(242, 237, 229);
     border-radius: 8px;
     background: #FFF;
@@ -67,6 +70,8 @@ p{
     height: 48px;
     text-align: center;
     align-items: center;
+    display: flex;
+    gap: 5px;
 }
 
 /* container-popularTour style start */
@@ -255,4 +260,103 @@ p{
 .footer-logo img{
     width: 40px;
     height: 40px;
+}
+
+/* small And mobile device screen size */
+@media screen and (max-width:600px){
+    .banner-title h1 {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+    .banner-label{
+        flex-direction: column;
+        top: 364px;
+        height: 262px;
+        width: 230px;
+    }
+    .container-popularTour{
+        flex-direction: column;
+        align-items: center;
+    }
+    .popularTour-text {
+        width: 100%;
+    }
+    .tour-image img {
+        width: 100%;
+        margin: auto;
+        height: 342px;
+        padding-right: 62px;
+    }
+    .container-services{
+        flex-direction: column;
+        gap: 175px;
+        align-items: center;
+    }
+    .Service-row{
+        width: 335px;
+        height: 289px;
+    }
+    .service-row-3{
+        margin-top: 8px;
+    }
+    .container-place{
+        flex-direction: column;
+        width: 90%;
+    }
+    .place-text {
+        width: 80%;
+    }
+    .place-image{
+        padding-top: 40px;
+    }
+    .place-image img{
+        width: 335px;
+        height: 200px;
+    }
+    .wath-bd{
+        bottom: 31px;
+        left: 100px;
+    }
+    .container-newslater{
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .newslater-tittle {
+        width: 335px;
+    }
+    .newslater-button{
+        align-items: center;
+        padding-right: 26px;
+    }
+    .newslater-image{
+        width: 130%;
+        padding-left: 60px;
+    }
+    .newslater-image img{
+        width: 325px;
+        height: 300px;
+    }
+    .newslater-button input , .subscribe-button{
+        width: 282px;
+        height: 39px;
+    }
+    .rotate {
+        width: 228px;
+        height: 69px;
+        left: 128px;
+    }
+    .rotate h3 {
+        font-size: 13px;
+    }
+    .rotate h2 {
+        font-size: 16px;
+    }
+    .footer-title {
+        
+}
+/* tablate and medium device style */
+@media screen and (min-width:600px) and (max-width){
+    
 }

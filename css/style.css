@@ -258,6 +258,7 @@ p{
     margin: auto;
     display: flex;
     padding-top: 200px;
+    gap: 24px;
 }
 .place-text{
     width: 50%;
@@ -392,6 +393,7 @@ p{
     .container-popularTour{
         flex-direction: column;
         align-items: center;
+        padding-top: 24px;
     }
     .popularTour-text {
         width: 100%;
@@ -402,9 +404,10 @@ p{
         height: 342px;
         padding-right: 62px;
     }
-    /* style */
-    .child-container{
+    .container-destination{
+        padding-top: 24px;
     }
+    /* style */
     .row-1{
         display: flex;
         flex-direction: column;
@@ -471,6 +474,7 @@ p{
     .container-place{
         flex-direction: column;
         width: 90%;
+        padding-top: 145px;
     }
     .place-text {
         width: 80%;

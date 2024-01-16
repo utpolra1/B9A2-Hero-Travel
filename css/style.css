@@ -17,6 +17,34 @@ p{
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
 }
+/* nav style start */
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+    margin: auto;
+}
+.nav-image{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.nav-image img{
+    width: 48px;
+    height: 56px;
+}
+.nav-image h1{
+    font-size: 36px;
+}
+.nav-list{
+    display: flex;
+    gap: 44px;
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+}
 /* banner style start  */
 
 .container-banner{
@@ -26,21 +54,21 @@ p{
     max-width: 1170px;
     margin: auto;
     height: 500px;
-    margin-top: 50px;
+    margin-top: -50px;
     color: #FFF;
     align-items: center;
     text-align: center;
 }
 .banner-title h1{
     font-size: 64px;
-    padding-top: 106px;
+    padding-top: 100px;
 }
 .banner-title p{
     font-size: 16px;
 }
 .banner-label{
     position: absolute;
-    top: 400px;
+    top: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -63,6 +91,7 @@ p{
   
 .banner-btn{
     background: #FF5400;
+    border: 1px solid #FF5400;
     color:#FFF;;
     padding: 10px 20px;
     border-radius: 8px;
@@ -127,8 +156,64 @@ p{
     gap: 24px;
     padding-bottom:24px ;
     justify-content: center;
+    position: relative;
 }
-
+.text-overlay-1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.text-overlay-2 {
+    position: absolute;
+    top: 47%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.text-overlay-3 {
+    position: absolute;
+    top: 47%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.text-overlay-4 {
+    position: absolute;
+    top: 47%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.text-overlay-5 {
+    position: absolute;
+    top: 47%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.text-overlay-6 {
+    position: absolute;
+    top: 47%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.text-overlay-7 {
+    position: absolute;
+    top: 47%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
 
 /* why choice us style start */
 .service-all{
@@ -239,12 +324,14 @@ p{
     height: 52px;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
+    border: 1px solid rgb(242, 237, 229);
 }
 .subscribe-button{
     width: 400px;
     height: 52px;
     border-radius: 8px;
     background: #FF5400;
+    border: 1px solid rgb(242, 237, 229);
 }
 
 /* footer-container style start */
@@ -279,15 +366,29 @@ p{
 
 /* small And mobile device screen size */
 @media screen and (max-width:600px){
+    .container-nav {
+        flex-direction: column;
+    }
+    .nav-image h1 {
+        font-size: 24px;
+    }
+    .nav-list{
+        gap: 12px;
+        padding-right: 50px;
+    }
+
     .banner-title h1 {
         font-size: 22px;
         padding-top: 50px;
     }
     .banner-label{
         flex-direction: column;
-        top: 364px;
+        top: 490px;
         height: 262px;
         width: 230px;
+    }
+    .container-banner{
+        margin-top: 50px;
     }
     .container-popularTour{
         flex-direction: column;
@@ -324,6 +425,38 @@ p{
         width: 335px;
         height: 176px;
     }
+    .text-overlay-1 {
+        top: 25%;
+        left: 50%;
+    }
+    .text-overlay-2 {
+        top: 73%;
+        left: 50%;
+    }
+    .text-overlay-3 {
+        top: 15%;
+        left: 50%;
+    }
+    .text-overlay-4 {
+        top: 48%;
+        left: 50%;
+    }
+    .text-overlay-5 {
+        top: 82%;
+        left: 50%;
+    }
+    .text-overlay-6 {
+        top: 25%;
+        left: 50%;
+    }
+    .text-overlay-7 {
+        top: 70%;
+        left: 50%;
+    }
+    .service-all {
+        padding-top: 1px;
+    }
+
     .container-services{
         flex-direction: column;
         gap: 175px;
@@ -390,7 +523,6 @@ p{
     .rotate h2 {
         font-size: 16px;
     }
-    .footer-title {
         
 }
 /* tablate and medium device style */

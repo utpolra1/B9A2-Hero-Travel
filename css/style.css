@@ -113,6 +113,21 @@ p{
     text-decoration: none;
     color: #FFF;
 }
+/*Destination style start */
+.container-destination{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 44px;
+}
+.child-container{
+
+}
+.row-1, .row-2, .row-3{
+    display: flex;
+    gap: 24px;
+    padding-bottom:24px ;
+    justify-content: center;
+}
 
 
 /* why choice us style start */
@@ -286,6 +301,28 @@ p{
         margin: auto;
         height: 342px;
         padding-right: 62px;
+    }
+    /* style */
+    .child-container{
+    }
+    .row-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-1 img ,.row-2 img , .row-3 img{
+        width: 335px;
+        height: 176px;
     }
     .container-services{
         flex-direction: column;

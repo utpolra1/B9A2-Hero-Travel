@@ -610,5 +610,8 @@ p{
         flex-wrap: nowrap;
         gap: 15px;
     }
+    .popularTour-text, .place-text{
+        padding-left: 25px;
+    }
     
 }

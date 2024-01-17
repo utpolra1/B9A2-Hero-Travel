@@ -602,5 +602,13 @@ p{
         width: 100%;
         height: 100%;
     }
-
+    .service-row-3{
+        margin-top: 0px;
+    }
+    .container-services{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+    
 }
